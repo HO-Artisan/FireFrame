@@ -1,0 +1,36 @@
+{
+	"schema_version": 1,
+	"quilt_loader": {
+		"group": "ho.artisan",
+		"id": "fireframe",
+		"version": "${version}",
+		"metadata": {
+			"name": "Xeon",
+			"description": "A mod.",
+			"contributors": {
+				"HO Artisan": "Team",
+				"Oganesson897": "Owner"
+			},
+			"icon": "assets/fireframe/icon.png"
+		},
+		"intermediate_mappings": "net.fabricmc:intermediary",
+		"entrypoints": {
+			"init": ["ho.artisan.fireframe.FireFrame"]
+		},
+		"depends": [
+			{
+				"id": "quilt_loader",
+				"versions": ">=0.17.6-"
+			},
+			{
+				"id": "quilted_fabric_api",
+				"versions": ">=5.0.0-"
+			},
+			{
+				"id": "minecraft",
+				"versions": ">=1.19.3"
+			}
+		]
+	},
+	"mixin": "fireframe.mixins.json"
+}
